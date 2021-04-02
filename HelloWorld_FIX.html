@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Hello Extensions</title>
+     </head>
+	 <script>
+		var metaTag=document.createElement('meta');
+		metaTag.name = "viewport"
+		metaTag.content = "width=device-width, initial-scale=1, user-scalable=0"
+		document.getElementsByTagName('head')[0].appendChild(metaTag);
+	 </script>
+     <body>
+       <div class="container">
+         <div>
+           <h1>Hello ERROR!</h1>
+         </div>
+		 <div>
+			 <select>
+				<option value="c">Klassen</option>
+				<option value="t">Docenten</option>
+				<option value="r">Lokalen</option>
+				<option value="s">Leerlingen</option>
+			</select>
+		 </div>
+       </div>
+     </body>
+ </html>
