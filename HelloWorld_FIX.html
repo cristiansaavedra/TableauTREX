@@ -7,10 +7,13 @@
      <title>Hello Extensions</title>
      </head>
 	 <script>
+	 function fix()
+	 {
 		var metaTag=document.createElement('meta');
 		metaTag.name = "viewport"
 		metaTag.content = "width=device-width, initial-scale=1, user-scalable=0"
 		document.getElementsByTagName('head')[0].appendChild(metaTag);
+	 }
 	 </script>
      <body>
        <div class="container">
@@ -24,6 +27,7 @@
 				<option value="r">Lokalen</option>
 				<option value="s">Leerlingen</option>
 			</select>
+			<button onclick="fix()">Fix me</button>
 		 </div>
        </div>
      </body>
